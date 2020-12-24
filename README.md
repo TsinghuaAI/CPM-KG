@@ -17,9 +17,9 @@
 
 已有的图谱与表示下载请前往：https://cpm.baai.ac.cn/download.html
 
-## 3 数据及使用方法
+## 3 使用方法
 
-#### 3.1 安装
+#### 3.1 安装依赖
 
 使用`pip install -r requirements.txt`来安装所需的依赖。
 
