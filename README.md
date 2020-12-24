@@ -2,11 +2,7 @@
 
 本项目旨在提供大规模知识图谱的预训练表示，用于下游各类任务的知识强化。
 
-## 1 相关库
-
-首先需要安装各种依赖环境，主要为PyTorch与Numpy。
-
-## 2 图谱规模与模型
+## 1 图谱规模与模型
 
 目前使用的图谱为Wikidata全局数据，整体的规模如下：
 
@@ -17,13 +13,19 @@
 所采用的模型为Distmult。
 
 
-## 3 数据下载
+## 2 数据下载
 
-已有的图谱与表示下载链接如下：
+已有的图谱与表示下载请前往：https://cpm.baai.ac.cn/download.html
 
-- rel2id.txt (13K)   链接: https://pan.baidu.com/s/11AJpuO6fqigEmYmUkSBKuA  密码: sq03
-- ent2id.txt (1.5G)   链接: https://pan.baidu.com/s/1QD8RuJrH12d98pgR0gcs0Q  密码: vnkc
-- final_distmult_1000_compressed.tar.gz (10G) 链接: https://pan.baidu.com/s/1BjZ7oTuQ_Xjf3olJBeca8A  密码: hlbv
+## 3 数据及使用方法
+
+#### 3.1 安装
+
+使用`pip install -r requirements.txt`来安装所需的依赖。
+
+#### 3.2 使用
+
+读取数据请参考`sample.py`文件，通过实体id和关系id可以获取其对应的表示（返回为`numpy.array`格式）。
 
 ## 4 未来工作
 
